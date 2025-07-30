@@ -1,4 +1,5 @@
 import React from 'react';
+feature/form
 
 // ✅ Define Form component
 function ContactForm() {
@@ -13,11 +14,28 @@ function ContactForm() {
   );
 }
 
+ main
+
+// ✅ Define Navbar component here
+function Navbar() {
+  return (
+    <div style={{ backgroundColor: '#f2f2f2', padding: '10px' }}>
+      <h3>Navbar Component</h3>
+    </div>
+  );
+}
+
+// ✅ Main App component
 function App() {
   return (
     <div>
+ feature/form
       <h1>Hello React App</h1>
       <ContactForm /> {/* 👈 Include the form here */}
+
+      <Navbar /> {/* Use Navbar here */}
+      <h1>Hello React App</h1>
+ main
     </div>
   );
 }

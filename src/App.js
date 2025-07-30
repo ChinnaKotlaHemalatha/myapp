@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
+// ✅ Define Form component
+function ContactForm() {
+  return (
+    <form style={{ margin: '20px' }}>
+      <label>Name: </label>
+      <input type="text" placeholder="Enter your name" /><br /><br />
+      <label>Email: </label>
+      <input type="email" placeholder="Enter your email" /><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hello React App</h1>
+      <ContactForm /> {/* 👈 Include the form here */}
     </div>
   );
 }
